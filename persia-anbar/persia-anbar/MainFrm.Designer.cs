@@ -44,7 +44,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(811, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(921, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -64,6 +64,7 @@
             this.رسیدانبارToolStripMenuItem.Name = "رسیدانبارToolStripMenuItem";
             this.رسیدانبارToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.رسیدانبارToolStripMenuItem.Text = "رسید انبار";
+            this.رسیدانبارToolStripMenuItem.Click += new System.EventHandler(this.رسیدانبارToolStripMenuItem_Click);
             // 
             // حوالهانبارToolStripMenuItem
             // 
@@ -81,13 +82,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 464);
+            this.ClientSize = new System.Drawing.Size(921, 464);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainFrm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainFrm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

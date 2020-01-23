@@ -16,10 +16,21 @@ namespace persia_anbar
         {
             InitializeComponent();
         }
-
+        
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void MainFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void رسیدانبارToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResidFrm resid = new ResidFrm();
+            resid.ShowDialog();
         }
     }
 }
