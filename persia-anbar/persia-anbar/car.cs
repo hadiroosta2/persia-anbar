@@ -15,6 +15,6 @@ namespace persia_anbar
         public int ID { get; set; }
         public string CarNumber { get; set; }
         public string CarName { get; set; }
-        public int PersonID { get; set; }
+        public virtual person Person { get; set; }
     }
 }

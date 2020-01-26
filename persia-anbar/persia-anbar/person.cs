@@ -16,6 +16,8 @@ namespace persia_anbar
         public string Name { get; set; }
         public string Adress { get; set; }
         public bool Active { get; set; }
-        public string CodeMelli { get; set; }   
+        public string CodeMelli { get; set; }
+        public virtual ICollection<tell> Tell { get; set; }
+        public virtual ICollection<car> Car { get; set; }
     }
 }
