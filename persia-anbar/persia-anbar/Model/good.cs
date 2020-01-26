@@ -18,5 +18,6 @@ namespace persia_anbar
         public decimal Price { get; set; }
         public anbar Anbar { get; set; }
         public virtual ICollection<unit> Unit { get; set; }
+        public string Description { get; set; }
     }
 }

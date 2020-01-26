@@ -18,5 +18,6 @@ namespace persia_anbar
         public user User { get; set; }
         public DateTime Date { get; set; }
         public virtual ICollection<good> Good { get; set; }
+        public string Description { get; set; }
     }
 }

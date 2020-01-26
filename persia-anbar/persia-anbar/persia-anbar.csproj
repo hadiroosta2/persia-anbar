@@ -52,28 +52,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="car.cs" />
-    <Compile Include="good.cs" />
-    <Compile Include="MainFrm.cs">
+    <Compile Include="Model\anbar.cs" />
+    <Compile Include="Model\car.cs" />
+    <Compile Include="Model\good.cs" />
+    <Compile Include="View\MainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainFrm.Designer.cs">
+    <Compile Include="View\MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="person.cs" />
+    <Compile Include="Model\person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="resid.cs" />
-    <Compile Include="ResidFrm.cs">
+    <Compile Include="Model\resid.cs" />
+    <Compile Include="View\ResidFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ResidFrm.Designer.cs">
+    <Compile Include="View\ResidFrm.Designer.cs">
       <DependentUpon>ResidFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="tell.cs" />
-    <Compile Include="unit.cs" />
-    <Compile Include="user.cs" />
-    <EmbeddedResource Include="MainFrm.resx">
+    <Compile Include="Model\tell.cs" />
+    <Compile Include="Model\unit.cs" />
+    <Compile Include="Model\user.cs" />
+    <EmbeddedResource Include="View\MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,7 +86,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ResidFrm.resx">
+    <EmbeddedResource Include="View\ResidFrm.resx">
       <DependentUpon>ResidFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
