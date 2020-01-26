@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class good
+    class user
     {
-        public good()
+        public user()
         {
 
         }
         public int ID { get; set; }
         public string Name { get; set; }
         public bool Active { get; set; }
-        public decimal Price { get; set; }
-        public anbar Anbar { get; set; }
-        public virtual ICollection<unit> Unit { get; set; }
+        public string Password { get; set; }
     }
 }
