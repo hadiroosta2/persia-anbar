@@ -52,30 +52,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum\factorType.cs" />
+    <Compile Include="View\havaleFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\havaleFrm.Designer.cs">
+      <DependentUpon>havaleFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\havale.cs" />
     <Compile Include="Model\anbar.cs" />
     <Compile Include="Model\car.cs" />
     <Compile Include="Model\good.cs" />
-    <Compile Include="View\MainFrm.cs">
+    <Compile Include="View\mainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\MainFrm.Designer.cs">
-      <DependentUpon>MainFrm.cs</DependentUpon>
+    <Compile Include="View\mainFrm.Designer.cs">
+      <DependentUpon>mainFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\resid.cs" />
-    <Compile Include="View\ResidFrm.cs">
+    <Compile Include="View\residFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\ResidFrm.Designer.cs">
-      <DependentUpon>ResidFrm.cs</DependentUpon>
+    <Compile Include="View\residFrm.Designer.cs">
+      <DependentUpon>residFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\tell.cs" />
     <Compile Include="Model\unit.cs" />
     <Compile Include="Model\user.cs" />
-    <EmbeddedResource Include="View\MainFrm.resx">
-      <DependentUpon>MainFrm.cs</DependentUpon>
+    <EmbeddedResource Include="View\havaleFrm.resx">
+      <DependentUpon>havaleFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\mainFrm.resx">
+      <DependentUpon>mainFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,8 +97,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\ResidFrm.resx">
-      <DependentUpon>ResidFrm.cs</DependentUpon>
+    <EmbeddedResource Include="View\residFrm.resx">
+      <DependentUpon>residFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class resid
+    class havale
     {
-        public resid()
+        public havale()
         {
 
         }
@@ -19,7 +19,6 @@ namespace persia_anbar
         public DateTime Date { get; set; }
         public virtual ICollection<good> Good { get; set; }
         public factorType Type { get; set; }
-
         public string Description { get; set; }
     }
 }
