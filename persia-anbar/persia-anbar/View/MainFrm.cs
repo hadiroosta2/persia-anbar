@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace persia_anbar
 {
@@ -24,7 +25,7 @@ namespace persia_anbar
 
         private void MainFrm_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void رسیدانبارToolStripMenuItem_Click(object sender, EventArgs e)
