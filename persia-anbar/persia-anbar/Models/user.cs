@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class user
+    class user:generic
     {
         public user()
         {
 
         }
-        public int ID { get; set; }
-        public string Name { get; set; }
         public bool Active { get; set; }
         public string Password { get; set; }
     }

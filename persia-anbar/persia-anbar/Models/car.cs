@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class car
+    class car:generic
     {
         public car()
         {
 
         }
-        public int ID { get; set; }
         public string CarNumber { get; set; }
-        public string CarName { get; set; }
         public virtual person Person { get; set; }
     }
 }

@@ -42,7 +42,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -198,7 +198,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.btnExit);
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Controls.Add(this.button3);
             this.flowLayoutPanel1.Controls.Add(this.button4);
@@ -212,60 +212,62 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(900, 32);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
-            // button1
+            // btnExit
             // 
-            this.button1.Location = new System.Drawing.Point(862, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 25);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnExit.BackgroundImage = global::persia_anbar.Properties.Resources.Delete;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.Location = new System.Drawing.Point(869, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(28, 25);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(821, 3);
+            this.button2.Location = new System.Drawing.Point(835, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 25);
+            this.button2.Size = new System.Drawing.Size(28, 25);
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(780, 3);
+            this.button3.Location = new System.Drawing.Point(801, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 25);
+            this.button3.Size = new System.Drawing.Size(28, 25);
             this.button3.TabIndex = 0;
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(739, 3);
+            this.button4.Location = new System.Drawing.Point(767, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 25);
+            this.button4.Size = new System.Drawing.Size(28, 25);
             this.button4.TabIndex = 0;
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(698, 3);
+            this.button5.Location = new System.Drawing.Point(733, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(35, 25);
+            this.button5.Size = new System.Drawing.Size(28, 25);
             this.button5.TabIndex = 0;
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(657, 3);
+            this.button6.Location = new System.Drawing.Point(699, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(35, 25);
+            this.button6.Size = new System.Drawing.Size(28, 25);
             this.button6.TabIndex = 0;
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(616, 3);
+            this.button7.Location = new System.Drawing.Point(665, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(35, 25);
+            this.button7.Size = new System.Drawing.Size(28, 25);
             this.button7.TabIndex = 0;
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -308,7 +310,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

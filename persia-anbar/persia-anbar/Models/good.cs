@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class good
+    class good:generic
     {
         public good()
         {
 
         }
-        public int ID { get; set; }
-        public string Name { get; set; }
         public bool Active { get; set; }
         public decimal Price { get; set; }
         public anbar Anbar { get; set; }

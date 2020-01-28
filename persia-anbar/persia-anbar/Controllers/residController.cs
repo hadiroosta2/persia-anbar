@@ -8,7 +8,13 @@ namespace persia_anbar
 {
     class residController
     {
-        public residController()
+        resid resid;
+        ResidFrm residVeiw;
+        public residController(ResidFrm resid)
+        {
+            this.residVeiw = resid;
+        }
+        public void load()
         {
 
         }

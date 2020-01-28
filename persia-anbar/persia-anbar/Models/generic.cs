@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class anbar:generic
+    class generic
     {
-        public anbar()
-        {
-
-        }
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
 }
