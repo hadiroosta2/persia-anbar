@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="dataBaseContex.cs" />
     <Compile Include="Enum\factorType.cs" />
-    <Compile Include="residController.cs" />
+    <Compile Include="Controllers\residController.cs" />
     <Compile Include="Views\havaleFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +117,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

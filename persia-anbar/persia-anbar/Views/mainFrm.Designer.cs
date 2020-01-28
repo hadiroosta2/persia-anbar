@@ -33,6 +33,7 @@
             this.رسیدانبارToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حوالهانبارToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.انتقالبینانبارهاToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,11 +79,20 @@
             this.انتقالبینانبارهاToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.انتقالبینانبارهاToolStripMenuItem.Text = "انتقال بین انبارها";
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(921, 440);
+            this.panel1.TabIndex = 1;
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 464);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainFrm";
@@ -104,6 +114,7 @@
         private System.Windows.Forms.ToolStripMenuItem رسیدانبارToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem حوالهانبارToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem انتقالبینانبارهاToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
