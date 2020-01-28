@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Data.SqlClient;
 
 namespace persia_anbar
 {
@@ -33,5 +34,6 @@ namespace persia_anbar
             ResidFrm resid = new ResidFrm();
             resid.ShowDialog();
         }
+
     }
 }

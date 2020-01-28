@@ -20,5 +20,7 @@ namespace persia_anbar
         public DbSet<car> cars { get; set; }
         public DbSet<tell> tells { get; set; }
         public DbSet<user> users { get; set; }
+        public DbSet<resid> resids { get; set; }
+        public DbSet<havale> havales { get; set; }
     }
 }
