@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class user:generic
+  public class user:generic
     {
         public user()
         {

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace persia_anbar
 {
-    class good:generic
+  public  class good : generic
     {
+
         public good()
         {
 
@@ -17,5 +18,6 @@ namespace persia_anbar
         public anbar Anbar { get; set; }
         public virtual ICollection<unit> Unit { get; set; }
         public string Description { get; set; }
+       
     }
 }
