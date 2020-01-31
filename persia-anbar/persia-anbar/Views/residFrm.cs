@@ -87,12 +87,8 @@ namespace persia_anbar
 
         private void ResidFrm_Load(object sender, EventArgs e)
         {
+            dgvGoods.Rows.Add(1);
           //  ctrl.Update();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button6_Click(object sender, EventArgs e)
