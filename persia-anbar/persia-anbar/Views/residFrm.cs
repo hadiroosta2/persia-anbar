@@ -110,6 +110,36 @@ namespace persia_anbar
         {
             ctrl.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtCustomer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSerialSearch_Click(object sender, EventArgs e)
+        {
+            menuFrm m = new menuFrm(panel1, txtNumber);
+
+            m.ShowDialog();
+        }
+
+        private void btnCustomerSearch_Click(object sender, EventArgs e)
+        {
+
+            menuFrm m = new menuFrm(panel1, txtCustomer);
+
+            m.ShowDialog();
+        }
        
 
     }

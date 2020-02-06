@@ -17,7 +17,8 @@ namespace persia_anbar
         }
         public void Show()
         {
-
+           
+            
             MessageBox.Show(view.Refrence);
         }
         public void Update()

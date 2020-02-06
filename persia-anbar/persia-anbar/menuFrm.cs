@@ -24,6 +24,7 @@ namespace persia_anbar
             this.formenu = Formenu;
             this.StartPosition = FormStartPosition.Manual;
             db = new dataBaseContex();
+            this.setLocation();
         }
         private void setLocation()
         {
@@ -38,6 +39,14 @@ namespace persia_anbar
             this.setLocation();
             
             this.ShowDialog();
+        }
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
         }
 
     }

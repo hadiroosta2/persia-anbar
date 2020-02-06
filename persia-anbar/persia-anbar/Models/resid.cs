@@ -45,7 +45,6 @@ namespace persia_anbar
             this.Type = factorType.resid;
             this.User.Name = view.Name;
             good g = new good();
-            unit u = new unit();
             for (int i = 0; i < view.Goods.Count; i++)
             {
                 g.Name = view.Goods[i].Name;
@@ -58,7 +57,6 @@ namespace persia_anbar
             db.resids.Add(this);
             p = null;
             g = null;
-            u = null;
         }
 
     }

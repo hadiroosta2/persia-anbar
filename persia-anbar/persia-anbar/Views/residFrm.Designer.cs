@@ -57,6 +57,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.btnDateSearch = new System.Windows.Forms.Button();
+            this.btnCustomerSearch = new System.Windows.Forms.Button();
+            this.btnSerialSearch = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
@@ -87,6 +90,9 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnDateSearch);
+            this.panel1.Controls.Add(this.btnCustomerSearch);
+            this.panel1.Controls.Add(this.btnSerialSearch);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
@@ -210,6 +216,7 @@
             this.txtCustomer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtCustomer.Size = new System.Drawing.Size(204, 21);
             this.txtCustomer.TabIndex = 0;
+            this.txtCustomer.TextChanged += new System.EventHandler(this.txtCustomer_TextChanged);
             // 
             // txtNumber
             // 
@@ -319,6 +326,7 @@
             this.button5.Size = new System.Drawing.Size(32, 35);
             this.button5.TabIndex = 0;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -337,6 +345,42 @@
             this.button7.TabIndex = 0;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // btnDateSearch
+            // 
+            this.btnDateSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDateSearch.BackgroundImage = global::persia_anbar.Properties.Resources.Large_Icons;
+            this.btnDateSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDateSearch.Location = new System.Drawing.Point(392, 8);
+            this.btnDateSearch.Name = "btnDateSearch";
+            this.btnDateSearch.Size = new System.Drawing.Size(23, 22);
+            this.btnDateSearch.TabIndex = 2;
+            this.btnDateSearch.UseVisualStyleBackColor = true;
+            this.btnDateSearch.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnCustomerSearch
+            // 
+            this.btnCustomerSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCustomerSearch.BackgroundImage = global::persia_anbar.Properties.Resources.Search;
+            this.btnCustomerSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustomerSearch.Location = new System.Drawing.Point(673, 33);
+            this.btnCustomerSearch.Name = "btnCustomerSearch";
+            this.btnCustomerSearch.Size = new System.Drawing.Size(23, 22);
+            this.btnCustomerSearch.TabIndex = 2;
+            this.btnCustomerSearch.UseVisualStyleBackColor = true;
+            this.btnCustomerSearch.Click += new System.EventHandler(this.btnCustomerSearch_Click);
+            // 
+            // btnSerialSearch
+            // 
+            this.btnSerialSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSerialSearch.BackgroundImage = global::persia_anbar.Properties.Resources.Search;
+            this.btnSerialSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSerialSearch.Location = new System.Drawing.Point(779, 8);
+            this.btnSerialSearch.Name = "btnSerialSearch";
+            this.btnSerialSearch.Size = new System.Drawing.Size(23, 22);
+            this.btnSerialSearch.TabIndex = 2;
+            this.btnSerialSearch.UseVisualStyleBackColor = true;
+            this.btnSerialSearch.Click += new System.EventHandler(this.btnSerialSearch_Click);
             // 
             // btnExit
             // 
@@ -429,6 +473,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn uname2;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
         private System.Windows.Forms.DataGridViewTextBoxColumn description;
+        private System.Windows.Forms.Button btnSerialSearch;
+        private System.Windows.Forms.Button btnDateSearch;
+        private System.Windows.Forms.Button btnCustomerSearch;
 
 
     }
