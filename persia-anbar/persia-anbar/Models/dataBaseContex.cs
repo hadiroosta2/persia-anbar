@@ -22,5 +22,6 @@ namespace persia_anbar
         public DbSet<user> users { get; set; }
         public DbSet<resid> resids { get; set; }
         public DbSet<havale> havales { get; set; }
+       
     }
 }

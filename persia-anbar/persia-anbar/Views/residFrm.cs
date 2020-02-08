@@ -134,16 +134,13 @@ namespace persia_anbar
         private void btnSerialSearch_Click(object sender, EventArgs e)
         {
             menuFrm m = new menuFrm(panel1, txtNumber);
-
             m.showSerial();
         }
 
         private void btnCustomerSearch_Click(object sender, EventArgs e)
         {
-
             menuFrm m = new menuFrm(panel1, txtCustomer);
-
-            m.ShowDialog();
+            m.showPerson();
         }
        
 

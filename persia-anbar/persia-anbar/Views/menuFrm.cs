@@ -13,7 +13,7 @@ namespace persia_anbar
 {
     public partial class menuFrm : Form
     {
-        dataBaseContex db;
+        menuController ctrl;
         int x = 0;
         int y = 0;
         Control parent = null;
@@ -24,7 +24,7 @@ namespace persia_anbar
             this.parent = Parent;
             this.formenu = Formenu;
             this.StartPosition = FormStartPosition.Manual;
-            db = new dataBaseContex();
+            ctrl = new menuController(this);
             this.setLocation();
         }
         private void setLocation()
@@ -37,15 +37,12 @@ namespace persia_anbar
         }
         public void showSerial()
         {
-            var serial = db.resids;
-            foreach(resid r in serial)
-            {
-                dataGridView1.Rows.Add(1);
-                 
-            }
-            this.ShowDialog();
+            ctrl.showSerial();
         }
-
+        public void showPerson()
+        {
+            ctrl.showPerson();
+        }
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -53,6 +50,10 @@ namespace persia_anbar
                 this.Close();
             }
         }
-
+        public DataGridView dgv
+        {
+            get{ return dataGridView1;}
+            set { ;}
+        }
     }
 }

@@ -53,7 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dataBaseContex.cs" />
+    <Compile Include="Models\menu.cs" />
+    <Compile Include="Models\dataBaseContex.cs" />
     <Compile Include="Dgv.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -62,10 +63,11 @@
     </Compile>
     <Compile Include="Enum\factorType.cs" />
     <Compile Include="Controllers\residController.cs" />
-    <Compile Include="menuFrm.cs">
+    <Compile Include="Controllers\menuController.cs" />
+    <Compile Include="Views\menuFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menuFrm.Designer.cs">
+    <Compile Include="Views\menuFrm.Designer.cs">
       <DependentUpon>menuFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\generic.cs" />
@@ -101,7 +103,7 @@
     <EmbeddedResource Include="Dgv.resx">
       <DependentUpon>Dgv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menuFrm.resx">
+    <EmbeddedResource Include="Views\menuFrm.resx">
       <DependentUpon>menuFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\havaleFrm.resx">
