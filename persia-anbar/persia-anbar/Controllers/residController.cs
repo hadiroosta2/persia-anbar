@@ -25,7 +25,7 @@ namespace persia_anbar
         {
             model = new resid();
             view.Number = model.SerialNumber;
-            view.Date = model.Date;
+          //  view.Date = model.Date;
             view.Refrence = model.Refrence;
             view.Description = model.Description;
             if (model.Goods.Count > 0)

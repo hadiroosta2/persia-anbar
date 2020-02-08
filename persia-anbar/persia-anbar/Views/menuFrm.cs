@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace persia_anbar
 {
     public partial class menuFrm : Form
@@ -36,8 +37,12 @@ namespace persia_anbar
         }
         public void showSerial()
         {
-            this.setLocation();
-            
+            var serial = db.resids;
+            foreach(resid r in serial)
+            {
+                dataGridView1.Rows.Add(1);
+                 
+            }
             this.ShowDialog();
         }
 

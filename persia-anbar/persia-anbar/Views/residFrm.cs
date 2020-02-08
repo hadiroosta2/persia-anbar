@@ -113,7 +113,12 @@ namespace persia_anbar
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            dataBaseContex db = new dataBaseContex();
+            resid r = new resid();
+            r.SerialNumber = "1111";
+            r.Date = DateTime.Now;
+            db.resids.Add(r);
+            db.SaveChanges();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -130,7 +135,7 @@ namespace persia_anbar
         {
             menuFrm m = new menuFrm(panel1, txtNumber);
 
-            m.ShowDialog();
+            m.showSerial();
         }
 
         private void btnCustomerSearch_Click(object sender, EventArgs e)

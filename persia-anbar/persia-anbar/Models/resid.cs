@@ -27,8 +27,8 @@ namespace persia_anbar
         public user User { get; set; }
         public DateTime Date 
         {
-            get {return DateTime.Now ;}
-            set { ;}
+            get ;
+            set  ;
         }
         public virtual ICollection<good> Goods { get; set; }
         public factorType Type { get; set; }
